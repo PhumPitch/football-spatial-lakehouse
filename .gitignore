@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter & Databricks Notebook checkpoints
+.ipynb_checkpoints/
+.databricks/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Private Credentials & Secret Configs (Protects your IP!)
+config/config.yaml
+.env
+*.pem
+*.key
+
+# Proprietary Thesis Research & Secret Sauce (Protects DGVI IP)
+notebooks/*dgvi*
+notebooks/*DGVI*
+*dgvi*
+*DGVI*
+src/gold_transformation.py
+scripts/gold_layer_runner.py
+
+# Data & Parquet Storage (Keep git repository light)
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+*.parquet
+_delta_log/
+
+# Preserve directory structures via .gitkeep
+!data/raw/.gitkeep
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Archive / legacy prototype scripts
+_archive/
+
+# Local Spark artifacts
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Plot outputs
+plots/
+*.png
+
+# Test & coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Spark / Java logs
+*.log
