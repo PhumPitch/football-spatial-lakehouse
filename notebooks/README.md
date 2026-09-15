@@ -3,6 +3,7 @@
 Interactive notebooks for running the pipeline on a Databricks cluster with Unity Catalog.
 
 ## Execution Order
+0. `_ddl` — Create schema and volume
 1. `01_download_dynamic.ipynb` — Downloads raw match, event, and 360 tracking data.
 2. `02_bronze_ingestion.ipynb` — Ingests raw JSON into partitioned Delta tables.
 3. `03_silver_transformation.ipynb` — Cleans and transforms Bronze data into 10 Silver dimensional tables.
